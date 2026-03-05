@@ -1,3 +1,12 @@
+<h1 align="center">
+Hey <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif" width="32" height="32">, I'm Mohamed
+</h1>
+
+<h4 align="center">
+DEVELOPER • AUTOMATION BUILDER • TECH EXPLORER
+</h4>
+
+```python
 from Mohamedapi import MohamedAPI
 from Mohamedapi.responses import JSONResponse
 
@@ -7,14 +16,7 @@ app = MohamedAPI()
 async def about():
     return JSONResponse(content={
         "fullName": "Mohamed",
-        "role": "Developer / Builder",
-        "focus": [
-            "automation",
-            "web development",
-            "AI tooling",
-            "data extraction",
-            "trading systems"
-        ],
+        "role": "Developer / Automation Builder",
         "interests": [
             "programming",
             "anime",
@@ -26,14 +28,14 @@ async def about():
             "Python",
             "JavaScript",
             "Node.js",
-            "web scraping",
-            "OCR pipelines",
-            "API integration",
-            "automation scripting"
+            "Web Scraping",
+            "OCR Automation",
+            "API Integration",
+            "System Automation"
         ],
-        "currentProjects": [
+        "projects": [
             "AI OCR pipeline for manhwa translation",
-            "custom manga/manhwa website infrastructure",
+            "custom manga/manhwa platform",
             "automation tools for data extraction",
             "trading research systems"
         ]
@@ -42,13 +44,12 @@ async def about():
 @app.get("/contact")
 async def contact():
     return JSONResponse(content={
-        "message": "Contact endpoint intentionally minimal.",
-        "note": "No personal contact information exposed."
+        "message": "No public contact information provided."
     })
 
 @app.exception_handler(404)
 async def not_found(request, exc):
     return JSONResponse(
-        content={"message": "Endpoint does not exist"},
+        content={"message": "Route not found"},
         status_code=404
     )
