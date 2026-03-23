@@ -19,8 +19,6 @@ async def about():
         "role": "Developer / Automation Builder",
         "interests": [
             "programming",
-            "anime",
-            "manhwa",
             "technology",
             "financial markets"
         ],
@@ -29,13 +27,10 @@ async def about():
             "JavaScript",
             "Node.js",
             "Web Scraping",
-            "OCR Automation",
             "API Integration",
             "System Automation"
-        ],
+        ], 
         "projects": [
-            "AI OCR pipeline for manhwa translation",
-            "custom manga/manhwa platform",
             "automation tools for data extraction",
             "trading research systems"
         ]
