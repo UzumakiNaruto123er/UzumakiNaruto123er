@@ -1,5 +1,5 @@
 <h1 align="center">
-Hey <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif" width="32" height="32">, I'm Mohamed
+Hey <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif" width="32" height="32">, I'm ahmed
 </h1>
 
 <h4 align="center">
@@ -7,15 +7,15 @@ DEVELOPER • AUTOMATION BUILDER • TECH EXPLORER
 </h4>
 
 ```python
-from Mohamedapi import MohamedAPI
-from Mohamedapi.responses import JSONResponse
+from ahmedapi import ahmedAPI
+from ahmedapi.responses import JSONResponse
 
-app = MohamedAPI()
+app = ahmedAPI()
 
 @app.get("/about")
 async def about():
     return JSONResponse(content={
-        "fullName": "Mohamed",
+        "fullName": "ahmed",
         "role": "Developer / Automation Builder",
         "interests": [
             "programming",
